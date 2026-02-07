@@ -293,7 +293,7 @@ header {
 .gallery-item {
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     height: 250px;
 }
 
@@ -318,19 +318,36 @@ header {
 
 .bible-verse {
     font-style: italic;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: var(--primary-color);
-    margin-top: 2rem;
-    border-left: 4px solid var(--primary-color);
-    padding-left: 20px;
-    display: inline-block;
+    margin: 2.5rem auto 0;
+    padding: 30px 40px;
+    background: var(--accent-light);
+    border-radius: 15px;
+    position: relative;
+    max-width: 600px;
+    text-align: center;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.bible-verse::before {
+    content: '\201C';
+    font-family: serif;
+    font-size: 5rem;
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    opacity: 0.1;
+    color: var(--primary-color);
 }
 
 .bible-verse footer {
     font-size: 1rem;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     color: var(--text-light);
     font-style: normal;
+    font-weight: 600;
 }
 
 /* Outreach Section */
