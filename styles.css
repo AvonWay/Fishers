@@ -242,11 +242,24 @@ header {
     margin-right: auto;
 }
 
-.hero-buttons {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
+.hero-scripture {
+    margin-top: 3rem;
+    font-style: italic;
+    font-size: 1.4rem;
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+.hero-scripture p::before,
+.hero-scripture p::after {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 1px;
+    background: var(--white);
+    vertical-align: middle;
+    margin: 0 15px;
+    opacity: 0.5;
 }
 
 /* Section Padding */
